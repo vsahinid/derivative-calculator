@@ -3,7 +3,7 @@ import GitHubLogo from "../assets/GitHub_Logo.png";
 
 const Credits = () => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center" }} className="GitHubLogo">
       <a
         href="https://github.com/vsahinid/derivative-calculator"
         target="_blank"
