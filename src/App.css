@@ -1,26 +1,47 @@
-.App {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-    background: #c0c0aa; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* quick reset so all our padding is the right size */
+* {
+    box-sizing: border-box;
 }
 
-.GitHubLogo {
-    transition: transform 0.2s;
+/* add some spacing */
+body {
+    background: #F6F6F6;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
-.GitHubLogo:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+/* limit the width and center */
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
-.calc-wrapper {
-    width: 500px;
-    height: 600px;
+.calculator-buttons {
+    /* small spacing within our container */
+    padding: 1%;
+
+    /* the grid stuff! */
+    display: grid;
+
+    /* create 4 columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* add the grid gap */
+    grid-gap: 3%;
+}
+
+/* span across 3 columns */
+
+.is-screen {
+    grid-column: span 4;
+}
+
+/* go blue */
+.is-clear {
+    background: #3572DB;
+}
+
+.is-equals {
+    background: #28D060;
 }

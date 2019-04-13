@@ -34,15 +34,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="calc-wrapper">
-          <h1 style={{ textAlign: "center" }}>
-            Vas's Simple Derivative Calculator
-          </h1>
-          <div className="row">
+      <div className="">
+        <h2 style={{ textAlign: "center" }}>
+          Vas's Simple Derivative Calculator
+        </h2>
+
+        <div className="calculator">
+          <div className="calculator-buttons">
             <Screen>{this.state.input}</Screen>
-          </div>
-          <div className="row">
             <FunctionButton functionPassed={this.handleClick.bind(this, "x")}>
               x
             </FunctionButton>
@@ -67,8 +66,6 @@ class App extends Component {
             >
               cos(x)
             </FunctionButton>
-          </div>
-          <div className="row">
             <OperatorButton functionPassed={this.handleClick.bind(this, "+")}>
               +
             </OperatorButton>
@@ -87,8 +84,6 @@ class App extends Component {
             <OperatorButton functionPassed={this.handleClick.bind(this, ")")}>
               )
             </OperatorButton>
-          </div>
-          <div className="row">
             <DigitButton functionPassed={this.handleClick.bind(this, "1")}>
               1
             </DigitButton>
@@ -107,8 +102,7 @@ class App extends Component {
             <DigitButton functionPassed={this.handleClick.bind(this, "6")}>
               6
             </DigitButton>
-          </div>
-          <div className="row">
+
             <DigitButton functionPassed={this.handleClick.bind(this, "7")}>
               7
             </DigitButton>
@@ -128,8 +122,10 @@ class App extends Component {
               Enter
             </ClearEnterButton>
           </div>
-          <Credits />
         </div>
+        <br />
+        <br />
+        <Credits />
       </div>
     );
   }

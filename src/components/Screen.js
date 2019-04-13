@@ -3,10 +3,10 @@ import { Button } from "reactstrap";
 
 const Screen = props => {
   return (
-    <div onClick={props.functionPassed}>
+    <div onClick={props.functionPassed} className="is-screen">
       <Button
         color="secondary"
-        style={{ width: "475px", height: "50px", margin: "2.5px" }}
+        style={{ width: "100%", height: "50px" }}
         disabled
       >
         {props.children}

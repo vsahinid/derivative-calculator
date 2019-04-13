@@ -6,12 +6,12 @@ const Credits = () => {
     <div style={{ textAlign: "center" }} className="GitHubLogo">
       <a
         href="https://github.com/vsahinid/derivative-calculator"
-        target="_blank"
+        target="_blank noopener noreferrer"
       >
         <img
           src={GitHubLogo}
           alt="GitHub Logo"
-          style={{ width: "20%", height: "20%" }}
+          style={{ width: "10%", height: "10%" }}
         />
       </a>
     </div>
